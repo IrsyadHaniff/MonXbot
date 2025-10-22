@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(90deg, #ff3300, #ffaa00);
+}
+
+/* Tab Menu */
+.tab-menu {
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    width: 400px;
+}
+
+.tab-menu .tab {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.tab-menu .tab.active {
+    background: white;
+    border-bottom: 3px solid #ff4d00;
+}
+
+/* Container utama */
+.auth-container {
+    width: 400px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.459);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.form-container {
+    padding: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.form-desc {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* Label dan Input */
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(#222, #222) padding-box,
+        linear-gradient(90deg, #ff3300, #ffaa00) border-box;
+    color: white;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+/* Tombol */
+.login-btn {
+    width: 240px;
+    display: block;
+    margin: 0 auto; /* biar posisi tengah */
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #1a1a1a;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #ff4d00;
+    box-shadow: 0 0 15px #ff4d00;
+}
