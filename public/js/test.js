@@ -6,7 +6,7 @@ const fileInput = promptForm.querySelector("#file-input");
 const fileUploadWrapper = promptForm.querySelector("#file-upload-wrapper");
 const themeToggle = document.querySelector("#theme-file-btn");
 
-const API_KEY = "AIzaSyAX3rapxrsQJigXP4KCUrZhgmQPjMV6QLg";
+const API_KEY = "contoh_API";
 const API_URL =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
